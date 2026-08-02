@@ -1,5 +1,6 @@
 import random
 
+
 def gen_pass(pass_length):
     elements = "+-/*!&$#?=@<>"
     password = ""
@@ -14,7 +15,7 @@ def flip_coin():
     else:
         return "coroa"
 
-def gen_emodji():
+def gen_emoji():
     emodji = ["\U0001f600", "\U0001f642", "\U0001F606", "\U0001F923"]
     return random.choice(emodji)
 
@@ -24,3 +25,7 @@ def yes_no():
         return 'Sim'
     else:
         return 'Não'
+
+def guess_number():
+    n = random.randint(1, 10)
+    return n
